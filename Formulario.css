@@ -1,0 +1,29 @@
+p{text-align: center;
+background-color: rgb(177, 115, 235);}
+form {
+    width: 300px;
+    margin: auto;
+    border: 2px solid rgb(12, 12, 12);
+    padding: auto;
+    border-radius: 10px;
+    background-color: rgb(238, 233, 233);
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: rgb(19, 216, 46);
+    color: rgb(12, 12, 12);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input [type="submit"]:hover {
+    background-color: aqua;
+}
+br{line-height: 2;}
+
+h4{text-align: center;
+background-color: rgb(209, 178, 240);
+border: double}

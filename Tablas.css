@@ -1,0 +1,22 @@
+body{text-align: center;
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+border-collapse: collapse;
+font-size: 18px;}
+
+table{text-align: center;
+margin: auto;
+border-collapse:collapse ;
+width:100%;
+background-color: rgb(255, 0, 140);
+border-radius: 10px;
+overflow: hidden;}
+h4{text-align: center;
+background-color: rgb(230, 127, 207);
+color: aliceblue;}
+
+th, td {
+    border: 2px double #080d11;
+    padding: 10px;
+    text-align: center
+}
