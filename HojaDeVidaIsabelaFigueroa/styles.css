@@ -1,0 +1,147 @@
+:root{
+  --bg: #fffdfa;
+  --card: #fff;
+  --accent: #f7c7df;
+  --accent-2: #f5a9d1;
+  --text: #2b2b2b;
+  --muted: #6a6a6a;
+  --shadow: 0 6px 18px rgba(185,140,160,0.12);
+  --radius: 12px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg, #fffdfa 0%, #fff8fb 100%);
+  color:var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  padding:24px;
+}
+
+/* Layout container */
+.container{
+  max-width:980px;
+  margin:0 auto;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  padding:26px;
+}
+
+/* Header */
+.hero{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #ffeaf4;
+  padding-bottom:18px;
+  margin-bottom:18px;
+}
+
+.name{
+  margin:0;
+  font-size:28px;
+  letter-spacing:0.2px;
+  color:#1f1f1f;
+}
+
+.role{ margin:6px 0 0 0; color:var(--muted); font-weight:500; }
+.location { margin-top:6px; color:var(--muted); font-size:14px; }
+
+/* Foto */
+.foto {
+  width: 130px;
+  height: 130px;
+  border-radius: 80%;
+  object-fit: cover;
+  border: 2px solid #ffb6d9;
+  margin-bottom: 15px;
+}
+
+/* Contact */
+.contact{
+  list-style:none;
+  padding:0;
+  margin:0;
+  text-align:right;
+  font-size:14px;
+}
+.contact li{ margin:6px 0; }
+.contact a{ color:#b03f71; text-decoration:none; }
+
+/* Summary */
+.summary{ margin-bottom:18px; }
+.summary h2{ margin:0 0 8px 0; font-size:16px; color:#3a1f2a; }
+.summary p{ margin:0; color:var(--muted); }
+
+/* Grid sections */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:18px;
+}
+
+/* Card style */
+.card{
+  background: linear-gradient(180deg, #fff 0%, #fffefc 100%);
+  border-radius:10px;
+  padding:14px;
+  box-shadow: 0 4px 12px rgba(200,150,170,0.06);
+  border:1px solid #fff3f7;
+}
+.card h3{ margin:0 0 8px 0; font-size:15px; color:#4a1f33; }
+
+/* Items */
+.item{ margin-bottom:12px; }
+.item h4{ margin:0; font-size:14px; }
+.meta{ color:var(--muted); font-size:13px; margin-bottom:6px; }
+
+/* Skills */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  list-style:none;
+  padding:0;
+  margin:8px 0 0 0;
+}
+.skills li{
+  padding:6px 10px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
+  border-radius:999px;
+  color:#4a1226;
+  font-weight:600;
+  font-size:13px;
+}
+
+/* Footer */
+.footer{
+  margin-top:18px;
+  padding-top:12px;
+  border-top:1px dashed #ffe8f3;
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* Responsive */
+@media (max-width:820px){
+  .grid{ grid-template-columns: 1fr; }
+  .hero{ flex-direction:column; align-items:flex-start; gap:12px; }
+  .contact{ text-align:left; }
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  image-rendering: auto;     /* mejor calidad */
+  border: 6px solid #ffb6d9;
+}
